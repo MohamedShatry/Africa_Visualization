@@ -1,0 +1,99 @@
+body{
+  color: #586271;
+  cursor:pointer;
+}
+.heading{
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  text-decoration: underline;
+  fill: #586271;
+}
+.intro{
+  width: 750px;
+  height: 170px;
+  position: absolute;
+  top: 100px;
+  padding: 6px;
+  right: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+.jumbotron{
+  position: absolute;
+  height: 550px;
+  width: 900px;
+  left: 250px;
+  top: 120px;
+  border: 1px solid black;
+  background: white;
+  visibility: hidden;
+  z-index: 1;
+}
+.close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.county-names{
+  font-size: 0.5em;
+}
+.countries{
+  stroke-width: 0.3;
+  stroke: black;
+}
+.label{
+  fill: #586271;
+}
+.countries:hover{
+  stroke-width: 2;
+}
+.tooltip {
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-weight: bold;
+    color: black;
+    width: 400;
+    height: 200;
+    margin: auto;
+}
+.lines{
+  stroke-width: 3;
+  stroke: steelblue;
+  fill: none;
+}
+#dimensions{
+  width: 600px;
+  height: 80px;
+  margin: auto;
+  padding: 3px;
+  position: absolute;
+  text-align: center;
+  right: 50px;
+  bottom: 20px;
+  border: 1px dashed black;
+  border-radius: 5px;
+}
+#dimensions p{
+  margin-top: 10px;
+}
+input{
+  font-size: 1.2em;
+  float: center;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+#switch{
+  width: 500px;
+  text-align: center;
+  position: absolute;
+  bottom: 40px;
+  left: 200px;
+}

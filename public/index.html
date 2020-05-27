@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>D3: Setting path fills dynamically to generate a choropleth</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css"	href="styles.css">
+		<script type="text/javascript" src="https://d3js.org/d3.v4.js"></script>
+	</head>
+	<body>
+		<h2 class = "heading blur">A Map of African Countries' GDP Per Capita and HDI as at 2018</h2>
+		<div id = "jumbotron" class = "jumbotron" visibility = "hidden">
+			<form id="switch">
+	      <input  type='radio' id="line_graph" name="mode" value = "line_graph" checked>Line Graph</input>
+	      <input type='radio' id="donut_chart" name="mode" value = "donut_chart">GDP By Segments</input>
+	    </form>
+      <button type="button" class="close" data-dismiss="jumbotron" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+		<div class = "intro blur">
+			<p>This visualization shows the <a href = "https://knoema.com/atlas/ranks/GDP-per-capita-based-on-PPP" target="_blank">GDP Per Capita </a> and <a href = "http://hdr.undp.org/en/content/human-development-index-hdi" target="_blank">HDI (Human Development Index) </a> of different African Countries as at 2018<br/>
+			<p>Switch between GDP Per Capita and HDI (or choose both) at the bottom</p>
+			<p>Click on each country (or their labels) to see more information (Per Capita GDP over the last 10 years and GDP contribution by sector)</p>
+
+		</div>
+		<form id="dimensions" class = "blur">
+      <input  type='radio' id="gdp" name="mode" value = "gdp" checked>GDP Per Capita (PPP)</input>
+      <input type='radio' id="hdi" name="mode" value = "hdi">HDI</input>
+      <input type='radio' id="both" name="mode" value = "both">GDP Per Capita and HDI</input>
+			<p>Click to switch between different views &#128578;</p>
+    </form>
+	  <div id = "canvas" class = "blur"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="/index.js"	type="text/javascript"></script>
+	</body>
+</html>
